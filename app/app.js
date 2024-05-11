@@ -8,4 +8,4 @@ app.get('/', function (req, res) {
   res.json(result)
 })
 
-app.listen(3080)
+app.listen(4000, () => console.log(`Server running on port ${PORT}`));
