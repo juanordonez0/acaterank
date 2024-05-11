@@ -1,8 +1,11 @@
 import express from "express";
+import {pool} from "db/db.js";
+
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  const result = pool.query('SELECT "hello world" as RESULT')
+  res.json(result)
 })
 
-app.listen(process.env.PORT)
+app.listen(3060)
