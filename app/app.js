@@ -8,6 +8,4 @@ app.get('/', async function(req, res) {
   res.json(result)
 })
 
-app.listen(3000, () => console.log(`Server running on port 4000`));
-
-console.log(process.env.HOST)
+app.listen(3060, () => console.log(`Server running on port 4000`));
