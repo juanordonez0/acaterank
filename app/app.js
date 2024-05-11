@@ -8,4 +8,4 @@ app.get('/', async function(req, res) {
   res.json(result)
 })
 
-app.listen(4002, () => console.log(`Server running on port 4000`));
+app.listen(3000, () => console.log(`Server running on port 4000`));
